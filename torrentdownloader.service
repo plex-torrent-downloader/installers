@@ -1,0 +1,14 @@
+[Unit]
+Description=Plex Torrent Downloader
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/plextorrentdownloader
+Environment=PRISMA_CLI_QUERY_ENGINE_TYPE=binary PORT=3000
+ExecStart=/usr/local/bin/npm start
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

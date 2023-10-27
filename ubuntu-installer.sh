@@ -24,7 +24,7 @@ fi
 sudo npm i -g n
 sudo n 16
 echo "Node.js has been installed successfully."
-curl https://raw.githubusercontent.com/plex-torrent-downloader/installers/master/torrentdownloader.service > torrentdownloader.servic
+curl https://raw.githubusercontent.com/plex-torrent-downloader/installers/master/torrentdownloader.service > torrentdownloader.service
 sudo cp torrentdownloader.service /etc/systemd/system/
 sudo mkdir /opt/plextorrentdownloader
 sudo chmod -R 755 /opt/plextorrentdownloader
